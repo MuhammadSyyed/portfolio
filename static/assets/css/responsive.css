@@ -1,0 +1,154 @@
+@media only screen and (max-width : 2500px) {
+	.page-wrapper{
+		overflow:hidden;
+	}
+	
+}
+@media only screen and (max-width : 1199px) {
+	.atf-banner-social {
+		right: -20px;
+	}
+	.mt-xl-40{
+		margin-top:40px;
+	}
+	.mb-xl-40{
+		margin-bottom:40px;
+	}
+}
+@media only screen and (max-width : 992px) {
+	.atf-banner-social {
+		position: relative;
+		display: inline;
+		top: 30px;
+		left: 0;
+	}
+	.atf-banner-social  ul li a i {
+		transform: rotate(0deg);
+	}
+}
+@media only screen and (max-width : 991px) {
+	.atf-single-details h2 {
+		font-size: 50px;
+	}
+	.atf-testimonial-item{
+		padding:0px;
+	}
+	.atf-blog-area .atf-single-blog{
+		margin:20px 0;
+	}
+	.atf-single-resume .atf-single-icon {
+		left: -5%;
+	}
+	.atf-testi-img.atf-client-img img {
+		width: 100%;
+	}
+	.atf-border-right{
+		border-right:none;
+	}
+	.mt-lg-40{
+		margin-top:40px;
+	}
+	.mb-lg-40{
+		margin-bottom:40px;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+	.atf-home-area .atf_home_img2 img {
+		border-radius: 50%;
+	}
+	.atf-width-area{
+		height:1100px;
+	}
+	.atf-section-title h2{
+		font-size:25px;
+	}
+	#portfolio .atf-portfolio-nav .nav {
+		display: block;
+		text-align: center;
+	}
+	#portfolio .atf-portfolio-nav .nav li {
+		float: none;
+		display: inline-block;
+		padding: 5px 13px;
+		margin: 6px 12px;
+	}
+	#portfolio .atf-main-portfolio{
+		margin-left:1px;
+	}
+	.atf-hire-btn.text-end {
+		float: left;
+		margin-top: 30px;
+	}
+	.form-message{
+		padding-bottom:30px;
+	}
+	.mt-md-40{
+		margin-top:40px;
+	}
+	.mb-md-40{
+		margin-bottom:40px;
+	}
+	.atf-feature-text h5 {
+		margin-top: 10px;
+	}
+	.atf-single-resume .atf-single-icon {
+		left: -6%;
+	}
+	
+
+}
+
+@media only screen and (max-width: 576px) {
+	.atf-contact-border{
+		padding:0;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.0);
+		-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.0);
+	}
+	.atf-hire-content h3 {
+		font-size: 24px;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	.atf-single-resume .atf-single-icon{
+		display:none;
+	}
+	.atf-resume-box li{
+		padding:25px;
+	}
+	.atf-counter-icon{
+		display:none;
+	}
+	.atf-counter{
+		width:100%;
+	}
+	.atf-counter-content {
+		padding-left: 25px;
+	}
+	.atf-counter h3 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	
+}
+@media screen and (max-width: 320px) and (min-width: 0px){
+
+	.atf-single-details h2{
+		font-size:40px;
+	}
+	#home .atf-themes-btn{
+		margin-bottom:15px;
+	}
+	#portfolio .portfolio-list .nav li {
+		float: none;
+		display: inline-block;
+		padding: 7px 8px;
+	}
+
+	
+}

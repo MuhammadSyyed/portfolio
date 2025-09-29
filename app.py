@@ -1,0 +1,24 @@
+from fastapi import FastAPI, UploadFile, File, Form
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, JSONResponse,HTMLResponse
+import uvicorn
+
+app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+@app.get("/portfolio",response_class=HTMLResponse)
+async def get_portfolio():
+    return HTMLResponse(content=open('./static/portfolio.html').read())
+
+@app.post("/contact")
+async def contact(name: str = Form(...), email: str = Form(...), message: str = Form(...)):
+    return {"status": "success", "message": "Contact form submitted."}
+
+@app.get("/download")
+async def download_cv():
+    cv_path = "static/CV - Imran Abbas.pdf"
+    return FileResponse(cv_path, media_type='application/pdf', filename="cv_imran.pdf")
+
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
