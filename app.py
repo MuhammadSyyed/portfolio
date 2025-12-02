@@ -6,7 +6,7 @@ import uvicorn
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/portfolio",response_class=HTMLResponse)
+@app.get("/imranabbas",response_class=HTMLResponse)
 async def get_portfolio():
     return HTMLResponse(content=open('./static/portfolio.html').read())
 
