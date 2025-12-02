@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse,HTMLResponse
 import uvicorn
+import os
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -21,4 +22,5 @@ async def download_cv():
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
