@@ -61,7 +61,7 @@
 		border-radius: 50%;
 	}
 	.atf-width-area{
-		height:1100px;
+		height: auto;
 	}
 	.atf-section-title h2{
 		font-size:25px;
@@ -98,11 +98,16 @@
 	.atf-single-resume .atf-single-icon {
 		left: -6%;
 	}
-	
+	.atf-section-padding {
+		padding: 50px 0;
+	}
 
 }
 
 @media only screen and (max-width: 576px) {
+	.atf-section-padding {
+		padding: 40px 0;
+	}
 	.atf-contact-border{
 		padding:0;
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.0);
@@ -111,10 +116,22 @@
 	.atf-hire-content h3 {
 		font-size: 24px;
 	}
+	.atf-header-area {
+		height: 600px;
+	}
+	.atf-width-area {
+		height: auto;
+	}
 }
 
 
 @media screen and (max-width: 480px){
+	.atf-section-padding {
+		padding: 30px 0;
+	}
+	.atf-header-area {
+		height: 500px;
+	}
 	.atf-single-resume .atf-single-icon{
 		display:none;
 	}
